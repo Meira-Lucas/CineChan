@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');/* variavel para cores */
 :root{
-    --fundo-menu-lateral:#545258; /* 2D0D73 */
-    --fundo-escuro:#0D0D0D;
-    --fundo-claro:#fff;
+    --detalhes-menu-lateral:#7d140e; /* 2D0D73 */
+    --detalhes-escuro:#0D0D0D;
+    --detalhes-claro:#fff;
     
     --texto-escuro:#000;
     --texto-claro:#F2EDDC;
@@ -16,7 +16,7 @@
 body{
     font-family:"calligraffitti", sans-serif ;
     color:var(--texto-claro) ;
-    background:var(--fundo-escuro) ;
+    background:var(--detalhes-escuro) ;
 }
 a{
     color:var(--texto-claro);
@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6{
     left: 0;
     bottom: 0;
     width: 300px;
-    background: var(--fundo-menu-lateral);
+    background: var(--detalhes-menu-lateral);
     transition: all ease-in-out 0.5s;
     padding: 0 15px;
     z-index: 99999;
@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6{
     margin: 15px auto;
     display: block;
     width: 120px;
-    border: 3px var(--fundo-escuro);
+    border: 3px var(--detalhes-escuro);
     /* box-shadow: 15px 15px 15px 15px blue; */
 }
 .perfil h1{
@@ -61,8 +61,8 @@ h1, h2, h3, h4, h5, h6{
 .perfil .social-links a{
     font-size: 20px;
     display: inline-block;
-    background: var(--fundo-claro);
-    color: var(--fundo-escuro);
+    background: var(--detalhes-claro);
+    color: var(--detalhes-escuro);
     line-height: 1;
     padding: 8px 2px;
     margin-right: 4px;
@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6{
     font-size: 25px;
     transition: all 0.5s;
     /* outline: none !important; */
-    background: var(--fundo-claro);
+    background: var(--detalhes-claro);
     color: var(--texto-escuro);
     width: 40px;
     height: 40px;
@@ -152,7 +152,42 @@ h1, h2, h3, h4, h5, h6{
 #hero{
     width: 100%;
     height: 100vh;
-    background: url("../img/hero-bg.jpeg") center; /* inserir img no css */
+    background: url("../img/hero-bg2.jpeg") center; /* inserir img no css */
     background-size: cover;
     background-repeat: no-repeat;
+}
+#hero::before{ /* pseudo elemento css */
+    content: "";
+    background: rgba(5, 13, 26,0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1 ;
+}
+#hero .hero-container{
+    position: relative;
+    z-index: 2;
+    min-width: 300px;
+}
+#hero h1{
+    margin: 0 0 10px 0;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 56px;
+    color: var(--detalhes-claro);
+}
+#hero p{
+    color: var(--detalhes-claro);
+    margin-bottom: 50%;
+    font-size: 26px;
+    font-family: "Open" sans-serif;
+}
+#hero p span{
+    color: var(--texto-claro);
+    padding-bottom: 4px;
+    letter-spacing: 1px;
+    border-bottom: 3px solid var(--detalhes-escuro);
+    text-decoration: none;
 }
