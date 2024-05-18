@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');/* variavel para cores */
+:root{
+    --fundo-menu-lateral:#545258; /* 2D0D73 */
+    --fundo-escuro:#0D0D0D;
+    --fundo-claro:#fff;
+    
+    --texto-escuro:#000;
+    --texto-claro:#F2EDDC;
+
+    --detelhes-claros:#5F1BF2;
+    --detalhes-escuros:#2D0D73;
+}
+/* mobile menu */
+
+/* css pricipal */
+body{
+    font-family:"calligraffitti" sans-serif ;
+    color:var(--texto-claro) ;
+    background:var(--fundo-escuro) ;
+}
+a{
+    color:var(--texto-claro);
+    text-decoration: none;
+}
+a:hover{
+    color:var(--detelhes-claros) ;
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family:"calligraffitti" sans-serif ;
+}
+/* cabeçalho */
+#header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    background: var(--fundo-menu-lateral);
+    transition: all ease-in-out 0.5s;
+    padding: 0 15px;
+    z-index: 99999;
+    overflow-y: auto; /* cria uma barra de rolagem//scroll local */
+}
+.perfil img{
+    margin: 15px auto;
+    display: block;
+    width: 120px;
+    border: 3px var(--fundo-escuro);
+    /* box-shadow: 15px 15px 15px 15px blue; */
+}
