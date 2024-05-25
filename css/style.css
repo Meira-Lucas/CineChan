@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');/* variavel para cores */
 :root{
-    --detalhes-menu-lateral:#7d140e; /* 2D0D73 */
+    --detalhes-menu-lateral:#920f0f; /* 2D0D73 */
     --detalhes-escuro:#0D0D0D;
     --detalhes-claro:#fff;
-    
+    --detallhes-icones: #bb5e07;
     --texto-escuro:#000;
     --texto-claro:#F2EDDC;
     --texto-colorido: #f5f780;
+    --texto-titulo: #f37c0e;
 
-    --detelhes-claros:#5F1BF2;
-    --detalhes-escuros:#2D0D73;
+
+    --fundo-claros:#5F1BF2;
+    --fundo-escuros:#2D0D73;
 }
 /* mobile menu */
 
@@ -141,8 +143,9 @@ h1, h2, h3, h4, h5, h6{
 .nav-menu li:hover>a i{
     color: var(--texto-claro);
 }
-
 /* fim header */
+
+/*nav mobile*/
 .mobile-nav-toggle{
     position:fixed;
     right: 15px;
@@ -226,4 +229,57 @@ h1, h2, h3, h4, h5, h6{
     #hero p{
         font-size: 30px;
     }
+}
+/* css geral...acima do sobre */
+section{
+    padding: 60px 0;
+    overflow: hidden;
+}
+.section-bg{ /* bg-backgroud */
+    background: var(--detalhes-escuros); /* fazer essa opção de cor com o nome "fundo-claro ou escuro" */
+}
+.section-title {
+    padding-bottom: 30px;
+}
+.section-title h2{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    color: var(--texto-titulo);
+}
+.section-title h2::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 190px;
+    height: 3px;
+    background: var(--detalhes-claro);
+}
+.section-title p{
+    margin-bottom: 0;
+}
+/*Area sobre*/
+.sobre .container h3{
+    font-size: 30px;
+    font-weight: 500;
+    color: var(); 
+}
+.sobre  .container ul{
+    list-style: none;
+    padding: 0;
+}
+.sobre  .container ul li{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.sobre  .container ul strong{
+    margin-right: 15px;
+}
+.sobre  .container ul i{
+    font-size: 22px;
+    margin-right: 10px;
+    color: var(--detallhes-icones);
+    line-height: 0;
 }
