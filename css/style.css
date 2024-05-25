@@ -6,6 +6,7 @@
     
     --texto-escuro:#000;
     --texto-claro:#F2EDDC;
+    --texto-colorido: #f5f780;
 
     --detelhes-claros:#5F1BF2;
     --detalhes-escuros:#2D0D73;
@@ -48,7 +49,7 @@ h1, h2, h3, h4, h5, h6{
     display: block;
     width: 120px;
     border: 3px var(--detalhes-escuro);
-    /* box-shadow: 15px 15px 15px 15px blue; */
+    box-shadow: 0px 00px 15px 5px white; 
 }
 .perfil h1{
     font-size: 24px;
@@ -76,7 +77,28 @@ h1, h2, h3, h4, h5, h6{
     color: var(--texto-claro);
     text-decoration: none;
 }
-
+/*pricipal*/
+#main{
+    margin-left: 300px;
+}
+.container,
+.container-fluid{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+@media (max-width: 1199px){
+    #header{
+        left: -300px;
+    }
+    #main{
+        margin-left: 0;
+    }
+    .container,
+    .container-fluid{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
 /* menu nav desktop*/
 .nav-menu{
     padding: 30px 0 0 0;
@@ -144,7 +166,7 @@ h1, h2, h3, h4, h5, h6{
 .mobile-nav-active{
     overflow: hidden;
 }
-.mobile-nav-active, #header{
+.mobile-nav-active #header{
     left: 0;
 }
 
@@ -152,7 +174,7 @@ h1, h2, h3, h4, h5, h6{
 #hero{
     width: 100%;
     height: 100vh;
-    background: url("../img/hero-bg2.jpeg") center; /* inserir img no css */
+    background: url("../img/logos/logo\ v13.jpg") center; /* inserir img no css */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -185,9 +207,20 @@ h1, h2, h3, h4, h5, h6{
     font-family: "Open" sans-serif;
 }
 #hero p span{
-    color: var(--texto-claro);
+    color: var(--texto-colorido);
     padding-bottom: 4px;
     letter-spacing: 1px;
-    border-bottom: 3px solid var(--detalhes-escuro);
+    border-bottom: 3px solid var(--detalhes-menu-lateral);
     text-decoration: none;
+}
+@media (min-width: 1024px){
+    #hero{
+        background-attachment: fixed;
+    }
+}
+@media (max-width: 768px){
+    #hero h1{
+        font-size: 30px;
+        line-height: 36px;
+    }
 }
