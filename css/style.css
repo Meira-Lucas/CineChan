@@ -213,7 +213,7 @@ h1, h2, h3, h4, h5, h6{
     color: var(--texto-colorido);
     padding-bottom: 4px;
     letter-spacing: 1px;
-    border-bottom: 3px solid var(--detalhes-menu-lateral);
+    border-bottom: 3px solid var(--texto-colorido);
     text-decoration: none;
 }
 @media (min-width: 1024px){
@@ -282,4 +282,38 @@ section{
     margin-right: 10px;
     color: var(--detallhes-icones);
     line-height: 0;
+}
+
+/* Conquistas */
+.conquistas{
+    padding-bottom: 30px;
+}
+.conquistas .count-box{
+    padding: 30px;
+    width: 100%;
+}
+.conquistas .count-box i{
+    display: block;
+    font-size: 45px;
+    color: var(--texto-titulo);
+    float: left;
+    line-height: 0;
+    /* padding-right: 15px; */
+}
+.conquistas .count-box span{
+    font-size: 38px;
+    line-height: 40px;
+    display: block;
+    font-weight: 700;
+    color: var(--detallhes-icones);
+    margin-left: 60px;
+}
+.conquistas .count-box p{
+    padding: 15px 0 0 0;
+    margin: 0 0 0 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+}
+.conquistas .count-box i:hover{
+    color: var(--detallhes-icones);
 }
