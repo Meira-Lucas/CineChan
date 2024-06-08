@@ -12,6 +12,8 @@
 
     --fundo-claros:#5F1BF2;
     --fundo-escuros:#2D0D73;
+    --fundo-escuros-2:#141414;
+
 }
 /* mobile menu */
 
@@ -236,7 +238,7 @@ section{
     overflow: hidden;
 }
 .section-bg{ /* bg-backgroud */
-    background: var(--detalhes-escuros); /* fazer essa opção de cor com o nome "fundo-claro ou escuro" */
+    background: var(--fundo-escuros-2); /* fazer essa opção de cor com o nome "fundo-claro ou escuro" */
 }
 .section-title {
     padding-bottom: 30px;
@@ -316,4 +318,35 @@ section{
 }
 .conquistas .count-box i:hover{
     color: var(--detallhes-icones);
+}
+
+/* skill / vendas */
+.skills .progress{
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+}
+.skills .progress .skill{
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "open";
+    color: var(--texto-claros);
+}
+.skills .progress .skill .val{
+    float: right;
+    font-style: normal;
+}
+.skills .progress-bar-bg{
+    background: var(--fundo-escuros-2); /* ou fundo-escuro-2 */
+    height: 10px;
+}
+.skills .progress-bar{
+    width: 1px;
+    height: 10px;
+    transition: 3s;
+    background: var(--detallhes-icones);
 }
