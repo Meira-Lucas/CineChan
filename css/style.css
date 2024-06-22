@@ -542,5 +542,54 @@ section{
 .depoimentos .depoimento-item h4{
     font-size: 14px;
     margin: 0;
-    color: var(--fundo-escuros-2);
+    color: var(--detallhes-icones);
 }
+.depoimentos .depoimento-item .quote-left,
+.depoimentos .depoimento-item .quote-right{
+    color: var(--detallhes-icones);
+    font-size: 26px;
+}
+.depoimentos .depoimento-item .quote-left{
+    display: inline-block;
+    position: relative;
+    left: -5px;
+}
+.depoimentos .depoimento-item .quote-right{
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    right: -5px;
+}
+.depoimentos .depoimento-item p{
+    /* font-style: italic; */
+    color: var(--texto-escuro);
+    margin: 0 15px 25px 15px;
+    padding: 20px;
+    background: var(--detalhes-claro);
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 2px 15px rgb(248, 165, 10);
+}
+.depoimentos .depoimento-item p::after{
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: calc(50% + 20px);
+    width: 0;
+    height: 0;
+    border-top: 20px solid var(--detalhes-claro);
+    border-right: 20px solid transparent;
+    border-left: 20px transparent;
+}
+.depoimentos .swiper-pagination{
+    margin-top: 55px;
+    position: relative;
+}
+.depoimentos .swiper-pagination .swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+    background: var(--detallhes-icones);
+}
+/* .depoimentos .swiper-pagination .swiper-pagination-bullet-active{
+    background: var(--detalhes-menu-lateral);
+} */
