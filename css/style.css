@@ -593,3 +593,113 @@ section{
 /* .depoimentos .swiper-pagination .swiper-pagination-bullet-active{
     background: var(--detalhes-menu-lateral);
 } */
+/* contato / forms */
+.contato{
+    padding-bottom: 130px;
+}
+.contato .info{
+    padding: 30px;
+    background: var(--detallhes-icones);
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgb(255, 123, 0.61);
+}
+.contato .info i{
+    font-size: 20px;
+    color: var(--texto-escuro);
+    background:  rgb(255, 255, 255);
+    float: left;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transition: all 0.3s ease-in-out;
+}
+.contato .info h4{
+    padding: 10px 0 0 50px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #000;
+}
+.contato .info p{
+    color: #000;
+    font-size: 16px;
+    padding: 0 0 10px 50px;
+    margin-bottom: 30px;
+}
+.contato .info .fone p:hover{
+    color: var(--fundo-claros);
+}
+.contato .email-form{
+    padding: 30px;
+    background: var(--detallhes-icones);
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgba(255, 123, 0, 0.61);   
+    box-shadow: 3px 3px 3px 1px rgb(51, 51, 51);
+
+}
+.contato .email-form .form-group{
+    padding-bottom: 15px;
+}
+.contato .email-form label{
+    color: var(--texto-escuro);
+    margin-bottom: 2px;
+}
+.contato .email-form input,
+.contato .email-form textarea{
+    font-size: 16px;
+}
+.contato .email-form textarea{
+    padding: 10px 15px;
+    box-shadow: 3px 3px 3px 1px rgb(51, 51, 51);
+}
+.contato .email-form button[type=submit]{
+    background: var(--texto-claro);
+    color: var(--texto-escuro);
+    border: 0;
+    border-radius: 20px;
+    width: 100%;
+    height: 40px;
+    box-shadow: 3px 3px 3px 1px rgb(51, 51, 51);
+}
+.contato .email-form button[type=submit]:hover{
+    background: #000;
+    color: #fff;
+}
+/*back to top*/
+.back-to-top{
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 9999;
+    background: var(--detallhes-icones);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 0.4s;
+    box-shadow: 0px 0px 5px 0px rgb(255, 145, 1);
+}
+.back-to-top i{
+    color: var(--texto-claro);
+    font-size: 30px;
+    line-height: 0;
+    border-radius: 50%;
+}
+.back-to-top:hover{
+    background: var(--fundo-claros);
+    box-shadow: 0px 0px 5px 0px rgb(255, 255, 255);
+}
+.back-to-top i:hover{
+    color: var(--detallhes-icones);  
+    box-shadow: 0px 0px 5px 0px rgb(255, 255, 255); 
+}
+.back-to-top.active{
+    visibility: visible;
+    opacity: 1;
+}
+/*breadcrumbs*/
+/*voltar aqui*/
