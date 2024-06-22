@@ -731,11 +731,30 @@
                                         <!-- div nome -->
                                 <div class="form-group col-md-6">
                                         <!-- Label é colocada em cima da caixa de texto  -->
-                                    <label for="nome">Nome Completo</label>
-                                    <input type="text" placeholder="caua é bem gado da juliana...">
-
+                                    <label for="nome">Nome Completo *</label>
+                                    <input type="text" name="nome" class="form-control" placeholder="caua é da juliana" required>
                                 </div>  <!-- fim div nome -->
+
+                                        <!-- Label é colocada em cima da caixa de texto  -->
+                                <div class="form-group col-md-6">
+                                    <label for="email">Digite seu email *</label>
+                                    <input type="email" name="email" class="form-control" placeholder="mas a juliana n é dele" required>
+                                </div>
                             </div>      <!-- fim row  -->
+                            <div class="form-group">
+                                <label for="assunto">Assunto</label>
+                                <input type="text" name="assunto" class="form-control" placeholder="ela é de todos, mais do carlos doq dele">
+                            </div>      <!-- FIM ASSUNTO -->
+
+                            <div class="form-group">
+                                <label for="">Digite sua mensagem. *</label>
+                                <textarea name="mensagem" class="form-control" rows="10" required></textarea>
+                            </div>      <!-- FIM MENSAGEM -->
+
+                            <div class="text-center">
+                                <button type="submite"> Enviar </button>
+                            </div>
+
                         </form>
                     </div>              <!-- FIM COLUNA DIREITA -->
                 </div>                  <!-- FIM ROW -->
@@ -760,7 +779,9 @@
     </footer>
                                         <!-- BACK TO TOP -->
 
-
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
 
 
 
