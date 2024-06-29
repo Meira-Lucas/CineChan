@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');/* variavel para cores */
 :root{
     --detalhes-menu-lateral:#920f0f; /* 2D0D73 */
+    --detalhes-menu-lateral-2:#6b0a0a; /* 2D0D73 */
     --detalhes-escuro:#0D0D0D;
     --detalhes-claro:#fff;
     --detallhes-icones: #bb5e07;
@@ -45,7 +46,7 @@ h1, h2, h3, h4, h5, h6{
     background: var(--detalhes-menu-lateral);
     transition: all ease-in-out 0.5s;
     padding: 0 15px;
-    z-index: 99999;
+    z-index: 9997;
     overflow-y: auto; /* cria uma barra de rolagem//scroll local */
 }
 .perfil img{
@@ -601,7 +602,7 @@ section{
     padding: 30px;
     background: var(--detallhes-icones);
     width: 100%;
-    box-shadow: 0 0 24px 0 rgb(255, 123, 0.61);
+    box-shadow: 3px 3px 3px 1px rgb(51, 51, 51);
 }
 .contato .info i{
     font-size: 20px;
@@ -615,6 +616,7 @@ section{
     justify-content: center;
     display: flex;
     transition: all 0.3s ease-in-out;
+    box-shadow: 3px 3px 3px 1px rgb(51, 51, 51);
 }
 .contato .info h4{
     padding: 10px 0 0 50px;
@@ -635,8 +637,7 @@ section{
 .contato .email-form{
     padding: 30px;
     background: var(--detallhes-icones);
-    width: 100%;
-    box-shadow: 0 0 24px 0 rgba(255, 123, 0, 0.61);   
+    width: 100%;   
     box-shadow: 3px 3px 3px 1px rgb(51, 51, 51);
 
 }
@@ -700,6 +701,37 @@ section{
 .back-to-top.active{
     visibility: visible;
     opacity: 1;
+}
+/*footer*/
+#footer{
+    background: var(--detalhes-menu-lateral-2);
+    padding: 30px;
+    color: var(--texto-claro);
+    font-size: 16px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    z-index: 9999;   
+}
+#footer .copyright{
+    text-align: center;
+}
+#footer .creditos{
+    padding-top: 5px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--texto-claro);
+}
+#footer .creditos a{
+    color: var(--texto-escuro);
+}
+@media (max-width: 1199px){
+    #footer{
+        position: static;
+        width: auto;
+        padding-right: 20px 15px;
+    }
 }
 /*breadcrumbs*/
 /*voltar aqui*/
